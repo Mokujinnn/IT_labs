@@ -1,0 +1,18 @@
+body
+{
+    background-color:gray;
+    margin: 0em;
+    margin-left: 5em;
+    margin-right: 2em;
+}
+
+h1
+{
+    align-content: center;
+}
+
+p
+{
+    background-color: white;
+    border-style: double;
+}
