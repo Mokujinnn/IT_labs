@@ -6,13 +6,50 @@ body
     margin-right: 2em;
 }
 
-h1
-{
-    align-content: center;
-}
-
 p
 {
+    text-indent: 40px;
+}
+
+.main_text
+{
+
     background-color: white;
-    border-style: double;
+    border: 5px double blue;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+
+    text-align: justify;
+    font-size: 20px;
+
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header
+{
+    align-content: center;
+    font-family: Arial;
+    color: blue;
+    text-shadow: black 2px 2px;
+}
+
+.link
+{
+    color: green;
+}
+
+.text1
+{
+    position: absolute;
+    margin-top: -10px;
+}
+
+.text2
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
 }
