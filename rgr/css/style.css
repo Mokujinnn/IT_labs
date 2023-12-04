@@ -39,20 +39,72 @@
         /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 
-html
-{
+html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before
-{
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
-.item
-{
-    width: 200px;
-    height: 100px;
-    background-color: red;
-    padding: 20px;
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000;
 }
+
+.wrapper {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+/* Header style start */
+
+.header {
+    background-color: #D9D9D9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding-top: 32px;
+    padding-bottom: 38px;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__nav-item{
+    margin-right: 20px;
+}
+
+.header__nav-item:last-child{
+    margin-right: 0px;
+}
+
+.header__nav-link{
+    text-decoration: none;
+    color: #000 ;
+    line-height: 18px;
+}
+
+.header__nav-link:hover, .header__nav-link:focus, .header__nav-link:active{
+    /* background-color: #D9D9D9; */
+    opacity: 0.5;
+}
+
+/* Header style end */
