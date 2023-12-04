@@ -38,3 +38,21 @@
         url('../fonts/inter-v13-cyrillic_latin-600.woff') format('woff'),
         /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
+
+html
+{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before
+{
+    box-sizing: inherit;
+}
+
+.item
+{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    padding: 20px;
+}
