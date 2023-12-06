@@ -39,6 +39,8 @@
         /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
 }
 
+/* Fonts end */
+
 html {
     box-sizing: border-box;
 }
@@ -108,3 +110,69 @@ body {
 }
 
 /* Header style end */
+
+/* Intro style start */
+
+.intro{
+    background-color: #D9D9D9;
+    padding-top: 225px;
+    padding-bottom: 130px;
+    
+}
+
+.intro__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__left-side{
+    max-width: 400px;
+}
+
+.intro__right-side{
+    max-width: 670px;
+}
+
+.intro__text-title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 68px;
+    margin-bottom: 40px;
+}
+
+.intro__text-subtitle{
+    color: #353535;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+.intro__button{
+    background-color: #BA145A;
+    width: 250px;
+    min-height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+}
+
+.intro__button:hover{
+    opacity: 0.7;
+    background-color: #b90b54;
+}
+
+.intro__button-text{
+    color: #FFF;
+}
+
+/* Intro style end */
+
+/* Intro style start */
+
+
+
+/* Intro style end */
