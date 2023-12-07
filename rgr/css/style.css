@@ -179,6 +179,8 @@ body {
 }
 
 .gallery__wrapper{
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 100px;
 }
 
@@ -235,13 +237,15 @@ body {
 }
 
 .catalog__cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .catalog__card{
-    margin: 0 auto;
-
+    /* margin: 0 auto; */
 }
 
 .catalog__card-title{
@@ -261,3 +265,51 @@ body {
 }
 
 /* Catalog style end */
+
+/* Technology style start */
+
+.technology{
+    background-color: #E1E1E1;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.technology__wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technology__pic{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.technology__text{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.technology__text-subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.technology__text-title{
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 40px;
+
+    margin-bottom: 25px;
+}
+
+.technology__text-description{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Technology style end */
