@@ -176,7 +176,7 @@ body {
 /* Gallery style start */
 
 .gallery{
-    background-color: #D9D9D9;
+    background: linear-gradient(#D9D9D9, #FFFFFF);
 }
 
 .gallery__wrapper{
@@ -405,3 +405,46 @@ body {
 }
 
 /* Reprts style end */
+
+/* Conracts style start */
+
+.contacts__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contacts__map{
+    width: 635px;
+    height: 400px;
+}
+
+.contacts__text{
+    max-width: 500px;
+}
+
+.contacts__text-title{
+    font-size: 40px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.contents__text-subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.contents__text-worktime{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* Conracts style end */
