@@ -76,6 +76,7 @@ body {
     height: 100px;
     padding-top: 32px;
     padding-bottom: 38px;
+    border-bottom: 1px solid #616161 ;
 }
 
 .header__wrapper {
@@ -116,7 +117,7 @@ body {
 .intro{
     background-color: #D9D9D9;
     padding-top: 225px;
-    padding-bottom: 130px;
+    padding-bottom: 150px;
     
 }
 
@@ -160,9 +161,9 @@ body {
     border: 0;
 }
 
-.intro__button:hover{
-    opacity: 0.7;
-    background-color: #b90b54;
+.intro__button:hover, .intro__button:focus, .intro__button:active{
+    /* opacity: 0.7; */
+    background-color: #a81050;
 }
 
 .intro__button-text{
@@ -171,8 +172,92 @@ body {
 
 /* Intro style end */
 
-/* Intro style start */
+/* Gallery style start */
 
+.gallery{
+    background-color: #D9D9D9;
+}
 
+.gallery__wrapper{
+    padding-bottom: 100px;
+}
 
-/* Intro style end */
+.gallery__slider{
+    position: relative;
+    transform: translateZ(-100);
+}
+
+.gallery__buttons{
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; */
+}
+
+.gallery__left, .gallery__right{
+    position: absolute;
+    border: none;
+	background-color: transparent;
+    top: 45%;
+}
+
+.gallery__right{
+    padding-right: 20px;
+}
+
+.gallery__left{
+    padding-left: 20px;
+}
+
+/* Gallery style end */
+
+/* Catalog style start */
+
+.catalog__wrapper{
+    margin-bottom: 100px;
+}
+
+.catalog__title{
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.catalog__subtitle{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.catalog__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.catalog__card{
+    margin: 0 auto;
+
+}
+
+.catalog__card-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.catalog__card-list{
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+
+    padding-left: 20px;
+}
+
+/* Catalog style end */
