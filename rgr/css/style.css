@@ -63,6 +63,7 @@ body {
 .wrapper {
     max-width: 1270px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header style start */
@@ -125,7 +126,7 @@ body {
 .intro__wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -387,7 +388,7 @@ body {
 }
 
 .reports__card{
-    max-width: 420px;
+    max-width: 400px;
     padding-bottom: 100px;
 }
 
@@ -448,3 +449,44 @@ body {
 }
 
 /* Conracts style end */
+
+/* Footer style start */
+
+.footer{
+    background-color: #F5F5F5;
+    height: 100px;
+    padding-top: 32px;
+}
+
+.footer__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__nav-item{
+    margin-right: 20px;
+}
+
+.footer__nav-item:last-child{
+    margin-right: 0px;
+}
+
+.footer__nav-link{
+    text-decoration: none;
+    color: #000 ;
+    line-height: 18px;
+}
+
+.footer__nav-link:hover, .footer__nav-link:focus, .footer__nav-link:active{
+    opacity: 0.5;
+}
+
+/* Footer style end */
