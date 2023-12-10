@@ -25,16 +25,16 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Главная</a>
+                            <a href="#main" class="header__nav-link">Главная</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#reports" class="header__nav-link">Отзывы</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Каталог</a>
+                            <a href="#catalog" class="header__nav-link">Каталог</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#!" class="header__nav-link">Контакты</a>
+                            <a href="#contacts" class="header__nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,14 +44,14 @@
     </header>
     <!-- Header end -->
 
-    <main class="main">
+    <main id="main" class="main">
         <!-- Intro start -->
         <section class="intro">
             <div class="wrapper">
                 <div class="intro__wrapper">
                     <div class="intro__left-side">
                         <div class="intro__pic">
-                            <img src="img/intro-pic.png" alt="">
+                            <img class="intro__img" src="img/intro-pic.png" alt="">
                         </div>
                     </div>
                     <div class="intro__right-side">
@@ -69,11 +69,11 @@
                                     LG на официальном сайте.
                                 </p>
                             </div>
-                            <button class="intro__button">
+                            <a href="#catalog" class="intro__button">
                                 <p class="intro__button-text">
                                     Перейти в каталог
                                 </p>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -86,17 +86,16 @@
             <div class="wrapper">
                 <div class="gallery__wrapper">
                     <div class="gallery__slider">
-                        <div class="gallery__sliders image">
+                        <div class="gallery__sliders">
                             <img src="img/gallery-pic1.png" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                            <img src="img/gallery-pic2.png" alt="">
                         </div>
                         <div class="gallery__buttons">
                             <div class="gallery__left">
-                                <img src="img/svg/slider_leftbutton.svg" alt="">
+                                <img class="img__left" src="img/svg/slider_leftbutton.svg" alt="">
                             </div>
                             <div class="gallery__right">
-                                <img src="img/svg/slider_rightbutton.svg" alt="">
+                                <img class="img__right" src="img/svg/slider_rightbutton.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -106,7 +105,7 @@
         <!-- Gallery end -->
 
         <!-- Catalog start -->
-        <section class="catalog">
+        <section id="catalog" class="catalog">
             <div class="wrapper">
                 <div class="catalog__wrapper">
                     <h2 class="catalog__title">
@@ -120,7 +119,7 @@
                     </p>
                     <div class="catalog__cards">
                         <div class="catalog__card">
-                            <img src="img/catalog-pic1.png" alt="">
+                            <img class="catalog__card-pic" src="img/catalog-pic1.png" alt="">
                             <h3 class="catalog__card-title">
                                 27'' Монитор QHD IPS
                             </h3>
@@ -131,7 +130,7 @@
                             </ul>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog-pic2.png" alt="">
+                            <img class="catalog__card-pic" src="img/catalog-pic2.png" alt="">
                             <h3 class="catalog__card-title">
                                 23,8'' HD монитор
                             </h3>
@@ -142,7 +141,7 @@
                             </ul>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog-pic3.png" alt="">
+                            <img class="catalog__card-pic" src="img/catalog-pic3.png" alt="">
                             <h3 class="catalog__card-title">
                                 21,5'' Full HD монитор
                             </h3>
@@ -163,7 +162,7 @@
             <div class="wrapper">
                 <div class="technology__wrapper">
                     <div class="technology__pic">
-                        <img src="img/technology-pic.png" alt="">
+                        <img class="technology__img" src="img/technology-pic.png" alt="">
                     </div>
                     <div class="technology__text">
                         <h3 class="technology__text-subtitle">
@@ -204,7 +203,9 @@
                             игру максимально комфортной.
                         </p>
                     </div>
-                    <img src="img/benefits-pic.png" alt="">
+                    <div class="benefits_img">
+                        <img class="benefits_pic image" src="img/benefits-pic.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -224,7 +225,7 @@
                     </div>
                     <div class="reports__cards">
                         <div class="reports__card">
-                            <img src="img/reports-pic1.png" alt="">
+                            <img class="reports__card-img" src="img/reports-pic1.png" alt="">
                             <p class="reports__card-description">
                                 Покупаю уже 3й. Два для себя рабочих, один для брата. 
                                 Самым первым из этих мониторов пользуюсь уже почти два 
@@ -237,7 +238,7 @@
                             </h2>
                         </div>
                         <div class="reports__card">
-                            <img src="img/reports-pic2.png" alt="">
+                            <img class="reports__card-img" src="img/reports-pic2.png" alt="">
                             <p class="reports__card-description">
                                 Качество картинки на высоте, брал для консоли PS5 и все 
                                 отлично, работает С Windows 11 сразу масштаб не настроился, 
@@ -249,7 +250,7 @@
                             </h2>
                         </div>
                         <div class="reports__card">
-                            <img src="img/reports-pic3.png" alt="">
+                            <img class="reports__card-img" src="img/reports-pic3.png" alt="">
                             <p class="reports__card-description">
                                 Отличный монитор рекомендую. Такое разрешение это что то правда 
                                 все ниже 720 пикселей смотрится ужасно монитор гибкий все 
@@ -268,7 +269,7 @@
         <!-- Reports end -->
 
         <!-- Contacts start -->
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="wrapper">
                 <div class="contacts__wrapper">
                     <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d53dbe4bd010610a91a74dc6d33900f05374cf09a4b13036b08296843a8ecb1&amp;source=constructor" ></iframe>
@@ -306,27 +307,34 @@
                                 class="footer__logo-pic">
                         </a>
                     </div>
-                    <nav class="footer__nav">
-                        <ul class="footer__nav-list">
-                            <li class="footer__nav-item">
-                                <a href="!#" class="footer__nav-link">Главная</a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a href="!#" class="footer__nav-link">Отзывы</a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a href="!#" class="footer__nav-link">Каталог</a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a href="!#" class="footer__nav-link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="footer__rightside">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#main" class="footer__nav-link">Главная</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#reports" class="footer__nav-link">Отзывы</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#catalog" class="footer__nav-link">Каталог</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#contacts" class="footer__nav-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p class="footer__rightside-text">
+                            Профессиональные и игровые мониторы LG
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer end-->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -45,6 +45,10 @@ html {
     box-sizing: border-box;
 }
 
+*{
+    scroll-padding-top: 100px;
+}
+
 *,
 *::after,
 *::before {
@@ -78,7 +82,7 @@ body {
     padding-top: 32px;
     padding-bottom: 38px;
     border-bottom: 1px solid #616161 ;
-    z-index: 1;
+    z-index: 999;
 }
 
 .header__wrapper {
@@ -135,7 +139,7 @@ body {
 }
 
 .intro__right-side{
-    max-width: 670px;
+    max-width: 640px;
 }
 
 .intro__text-title{
@@ -154,6 +158,9 @@ body {
 }
 
 .intro__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #BA145A;
     width: 250px;
     min-height: 45px;
@@ -161,6 +168,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     border: 0;
+    text-decoration: none;
 }
 
 .intro__button:hover, .intro__button:focus, .intro__button:active{
@@ -169,6 +177,7 @@ body {
 }
 
 .intro__button-text{
+    text-decoration: none;
     color: #FFF;
 }
 
@@ -185,9 +194,20 @@ body {
 }
 
 .gallery__slider{
-    display: flex;
-    justify-content: center;
+    width: 940px;
+    /* display: flex; */
+    margin: 0 auto;
+    /* justify-content: center; */
     position: relative;
+    overflow: hidden;
+}
+
+.gallery__sliders{
+    position: relative;
+    width: 1880px;
+    display: flex;
+    left: 0;
+    transition: 1s;
 }
 
 .gallery__buttons{
@@ -198,7 +218,7 @@ body {
     position: absolute;
     border: none;
 	/* background-color: transparent; */
-    top: 45%;
+    top: 44%;
 }
 
 .gallery__left:hover, .gallery__right:hover,
@@ -211,11 +231,11 @@ body {
 
 .gallery__right{
     /* padding-right: 20px; */
-    left: 81%;
+    left: 91%;
 }
 
 .gallery__left{
-    right: 82%;
+    right: 91%;
     /* padding-left: 20px; */
 }
 
@@ -287,17 +307,18 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .technology__pic{
     max-width: 520px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-right: 10px;
 }
 
 .technology__text{
     max-width: 520px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .technology__text-subtitle{
@@ -327,10 +348,13 @@ body {
 .benefits{
     padding-top: 45px;
     margin-bottom: 100px;
+    /* display: flex; */
 }
 
 .benefits__text{
     text-align: center;
+
+    margin-bottom: 10px;
 }
 
 .benefits__text-subtitle{
@@ -427,6 +451,7 @@ body {
 }
 
 .contacts__text{
+    padding-left: 10px;
     max-width: 500px;
 }
 
@@ -471,9 +496,11 @@ body {
 .footer__nav-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px;
 }
 
 .footer__nav-item{
+    font-size: 18px;
     margin-right: 20px;
 }
 
@@ -491,4 +518,141 @@ body {
     opacity: 0.5;
 }
 
+.footer__rightside-text{
+    color: #8C8C8C;
+
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+}
 /* Footer style end */
+
+/* Media start */
+
+@media (max-width: 1250px){
+
+    .reports__card{
+        width: 300px;
+    }
+
+    .reports__card-img{
+        width: 300px;
+    }
+
+    .contacts__wrapper{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .image{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 1080px){
+
+    .intro__wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .technology__wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .catalog__card-pic{
+        width: 220px;
+    }
+
+    .catalog__card{
+        width: 220px;
+    }
+}
+
+@media (max-width: 970px) {
+    
+    .gallery__slider{
+        width: 90%;
+    }
+
+    .gallery__left{
+        right: 88%;
+    }
+
+    .gallery__right{
+        left: 88%;
+    }
+
+    .reports__card{
+        width: 220px;
+    }
+
+    .reports__card-img{
+        width: 220px;
+    }
+}
+
+@media (max-width: 690px){
+
+    .img__left, .img__right{
+        width: 40px;
+    }
+
+    .gallery__left{
+        right: 90%;
+    }
+
+    .gallery__right{
+        left: 90%;
+    }
+
+    .catalog__card-pic{
+        width: 300px;
+    }
+
+    .catalog__card{
+        width: 300px;
+    }
+
+    .catalog__cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reports__card{
+        width: 300px;
+    }
+
+    .reports__card-img{
+        width: 300px;
+    }
+
+    .reports__cards{
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .technology__img{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .contacts__map{
+        width: 80%;
+    }
+
+    .intro__img{
+        width: 80%;
+    }
+
+    .intro__text-title{
+        font-size: 40px;
+    }
+}
+/* Media end */
